@@ -1,4 +1,4 @@
-package RabinKarp
+package rabinkarp
 
 import "testing"
 

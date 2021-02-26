@@ -1,4 +1,4 @@
-package RabinKarp
+package rabinkarp
 
 import "github.com/cespare/xxhash"
 
