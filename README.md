@@ -2,3 +2,7 @@
 
 - 2021-02-26
     - Rabin-Karp
+- 2021-02-27
+    - Wasted, pathetic me :<
+- 2021-02-28
+    - Trie
