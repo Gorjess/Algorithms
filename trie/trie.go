@@ -51,5 +51,5 @@ func (n *node) IsExist(word string) bool {
 		return true
 	}
 
-	return n.IsExist(word[1:])
+	return n.children[i].IsExist(word[1:])
 }
