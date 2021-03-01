@@ -1,4 +1,4 @@
-package trie
+package normal
 
 import "fmt"
 
@@ -52,7 +52,7 @@ func (n *node) IsExist(word string) bool {
 	}
 
 	if l == 1 {
-		return true
+		return n.children[i].isEnd
 	}
 
 	return n.children[i].IsExist(word[1:])
