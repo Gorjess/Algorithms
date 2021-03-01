@@ -4,7 +4,6 @@ import "fmt"
 
 const alphabetSize = 26
 
-// todo test benchmark if node stores value
 type node struct {
 	isEnd    bool
 	children [alphabetSize]*node
