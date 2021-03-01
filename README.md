@@ -6,3 +6,5 @@
     - Wasted, pathetic me :<
 - 2021-02-28
     - Trie
+- 2021-03-01
+    - Bitwise Trie
