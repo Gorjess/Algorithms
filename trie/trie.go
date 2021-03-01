@@ -1,5 +1,7 @@
 package trie
 
+import "fmt"
+
 const alphabetSize = 26
 
 // todo test benchmark if node stores value
@@ -25,6 +27,9 @@ func (n *node) Insert(word string) {
 	}
 
 	index := hash(word[0])
+	if index >= alphabetSize {
+		panic(fmt.Sprintf("invalid character:<%s>", string(word[0])))
+	}
 	if n.children[index] == nil {
 		n.children[index] = newNode()
 	}

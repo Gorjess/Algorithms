@@ -29,3 +29,19 @@ func Test_node_IsExist(t *testing.T) {
 		})
 	}
 }
+
+func BenchmarkNode_Insert(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		root := newNode()
+		root.Insert("hello ")
+	}
+}
+
+func BenchmarkNode_IsExist(b *testing.B) {
+	root := newNode()
+	root.Insert("hello")
+	root.Insert("world")
+	for i := 0; i < b.N; i++ {
+		root.IsExist("wor")
+	}
+}
